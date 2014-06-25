@@ -156,7 +156,7 @@ module Curl
     # is for the server it is known as.
     #
     def ssl_verify_host?
-      ssl_verify_host.nil? ? false : (ssl_verify_host > 0)
+      ssl_verify_host.nil? ? true : (ssl_verify_host > 0)
     end
 
     #
